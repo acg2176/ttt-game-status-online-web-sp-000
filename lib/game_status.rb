@@ -17,9 +17,6 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  #board.all? do |slot|
-    #slot != " "
-  #end
   WIN_COMBINATIONS.each {|combo|
     win_index_1 = combo[0]
     win_index_2 = combo[1]
@@ -42,6 +39,10 @@ def full?(board)
   board.all? do |slot|
     slot != " "
   end
+end
+
+def draw?(board)
+
 end
 
 board = [" ", " ", " ", "X", "X", "X", " ", " ", " "]
