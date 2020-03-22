@@ -49,7 +49,6 @@ def draw?(board)
   elsif won?(board) == [0,1,2]
     return false
   end
-
 end
 
 board = [" ", " ", " ", "X", "X", "X", " ", " ", " "]
