@@ -51,5 +51,11 @@ def draw?(board)
   end
 end
 
+def over?(board)
+  if full?(board) && !won?(board)
+    true
+  end
+end
+
 board = [" ", " ", " ", "X", "X", "X", " ", " ", " "]
 won?(board)
